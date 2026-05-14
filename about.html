@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VisionIT Security — Camera Sales & Installation</title>
@@ -11,35 +11,6 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: "#f0f9ff",
-                100: "#e0f2fe",
-                200: "#bae6fd",
-                300: "#7dd3fc",
-                400: "#38bdf8",
-                500: "#0ea5e9",
-                600: "#0284c7",
-                700: "#0369a1",
-                800: "#075985",
-                900: "#0c4a6e",
-              },
-              ink: { DEFAULT: "#1e293b", soft: "#475569", faint: "#94a3b8" },
-              paper: "#f6f8fb",
-            },
-            fontFamily: {
-              head: ["Rajdhani", "sans-serif"],
-              body: ["Barlow", "sans-serif"],
-              mono: ['"Share Tech Mono"', "monospace"],
-            },
-          },
-        },
-      };
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -59,7 +30,7 @@
           <!-- Logo -->
           <a href="index.html" class="flex items-center gap-2.5 group">
             <span
-              class="grid place-items-center w-9 h-9 rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden"
+              class="grid place-items-center w-24 h-14 rounded-xl shadow-lg transition-transform group-hover:scale-105 overflow-hidden"
             >
               <img
                 src="logo.png"
@@ -67,9 +38,6 @@
                 class="w-full h-full object-cover"
               />
             </span>
-            <span class="font-head text-xl font-medium tracking-wider text-ink"
-              >VISION<strong class="font-bold text-brand-600">IT</strong></span
-            >
           </a>
 
           <!-- Desktop links -->
@@ -108,7 +76,7 @@
                 >Gallery</a
               >
             </li>
-            <li>
+            <!-- <li>
               <a
                 data-nav="blog.html"
                 class="nav-link transition-colors hover:text-ink"
@@ -123,16 +91,16 @@
                 href="reviews.html"
                 >Reviews</a
               >
-            </li>
+            </li> -->
           </ul>
 
           <!-- CTA + hamburger -->
           <div class="flex items-center gap-3">
             <a
               href="contact.html"
-              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-head font-semibold text-sm tracking-wide shadow-lg shadow-brand-500/25 transition-all hover:bg-brand-600 hover:shadow-brand-500/40 hover:-translate-y-0.5"
+              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-900 text-white font-head font-semibold text-sm tracking-wide shadow-lg shadow-brand-500/25 transition-all hover:bg-brand-400 hover:shadow-brand-500/40 hover:-translate-y-0.5"
             >
-              Get a Quote
+              Any Queries?
               <svg
                 class="w-4 h-4"
                 viewBox="0 0 24 24"
@@ -205,111 +173,246 @@
       </div>
     </nav>
 
-
-  <!-- ======================= PAGE BANNER ======================= -->
-  <section class="relative overflow-hidden pt-[72px] border-b border-slate-200 bg-white">
-    <div class="absolute inset-0 grid-bg"></div>
-    <div class="absolute -top-24 right-0 w-96 h-96 bg-brand-100/60 rounded-full blur-3xl"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20">
-      <div class="section-label flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] text-brand-600 mb-3">WHO WE ARE</div>
-      <h1 class="font-head font-bold text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.08] text-ink max-w-3xl">Security Is Not <span class="text-brand-600">An Option.</span></h1>
-      <p class="mt-4 text-lg text-ink-soft max-w-2xl">Protecting homes, retail stores, warehouses, hospitals, schools and government facilities since 2012.</p>
-    </div>
-  </section>
-
-  <!-- intro -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 md:py-24 grid lg:grid-cols-2 gap-14 items-center">
-    <div class="reveal">
-      <p class="text-ink-soft text-lg leading-relaxed">
-        VisionGuard Security has been protecting homes, retail stores, warehouses, hospitals, schools, and government facilities since 2012. We don't just sell cameras — we design complete surveillance ecosystems tailored to your environment.
-      </p>
-      <p class="mt-4 text-ink-soft text-lg leading-relaxed">
-        Our certified technicians handle everything from initial site assessment to cabling, mounting, DVR/NVR configuration, remote viewing setup, and ongoing maintenance. Every installation is backed by our 2-year service guarantee.
-      </p>
-      <ul class="mt-7 space-y-3">
-        <li class="flex items-start gap-3 text-ink-soft"><span class="text-brand-500 mt-0.5">▸</span> Certified CCTV &amp; IP Security Engineers</li>
-        <li class="flex items-start gap-3 text-ink-soft"><span class="text-brand-500 mt-0.5">▸</span> Authorized dealer for Hikvision, Dahua, CP Plus, Axis</li>
-        <li class="flex items-start gap-3 text-ink-soft"><span class="text-brand-500 mt-0.5">▸</span> Remote monitoring &amp; cloud storage solutions</li>
-        <li class="flex items-start gap-3 text-ink-soft"><span class="text-brand-500 mt-0.5">▸</span> Annual Maintenance Contracts (AMC) available</li>
-      </ul>
-      <a href="contact.html" class="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-brand-500 text-white font-head font-semibold tracking-wide shadow-lg shadow-brand-500/30 transition-all hover:bg-brand-600 hover:-translate-y-0.5">
-        Talk To Our Team
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-    <div class="reveal d2 relative">
-      <div class="grid grid-cols-2 gap-5">
-        <div class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56">
-          <span class="text-5xl">🏢</span>
-          <span class="font-mono text-xs tracking-wide text-ink-faint text-center">Commercial Installation</span>
+    <!-- ======================= PAGE BANNER ======================= -->
+    <section
+      class="relative overflow-hidden pt-[72px] border-b border-slate-200 bg-white"
+    >
+      <div class="absolute inset-0 grid-bg"></div>
+      <div
+        class="absolute -top-24 right-0 w-96 h-96 bg-brand-100/60 rounded-full blur-3xl"
+      ></div>
+      <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20">
+        <div
+          class="section-label flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] text-brand-600 mb-3"
+        >
+          WHO WE ARE
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 mt-10">
-          <span class="text-5xl">🏠</span>
-          <span class="font-mono text-xs tracking-wide text-ink-faint text-center">Residential Setup</span>
-        </div>
-        <div class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 -mt-10">
-          <span class="text-5xl">🏭</span>
-          <span class="font-mono text-xs tracking-wide text-ink-faint text-center">Industrial Security</span>
-        </div>
-        <div class="rounded-2xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 p-8 flex flex-col items-center justify-center gap-1 h-56">
-          <span class="font-head text-5xl font-bold">12+</span>
-          <span class="font-mono text-xs tracking-wide text-center">Years of Excellence</span>
-        </div>
+        <h1
+          class="font-head font-bold text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.08] text-ink max-w-3xl"
+        >
+          Security Is Not <span class="text-brand-600">An Option.</span>
+        </h1>
+        <p class="mt-4 text-lg text-ink-soft max-w-2xl">
+          Protecting homes, retail stores, warehouses, hospitals, schools and
+          government facilities since 2012.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- stats strip -->
-  <section class="bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div class="reveal"><div class="font-head text-4xl font-bold text-brand-600">1,200+</div><div class="font-mono text-xs text-ink-faint tracking-wide mt-1">Cameras Installed</div></div>
-      <div class="reveal d1"><div class="font-head text-4xl font-bold text-brand-600">350+</div><div class="font-mono text-xs text-ink-faint tracking-wide mt-1">Happy Clients</div></div>
-      <div class="reveal d2"><div class="font-head text-4xl font-bold text-brand-600">24/7</div><div class="font-mono text-xs text-ink-faint tracking-wide mt-1">Technical Support</div></div>
-      <div class="reveal d3"><div class="font-head text-4xl font-bold text-brand-600">2 Yr</div><div class="font-mono text-xs text-ink-faint tracking-wide mt-1">Product Warranty</div></div>
-    </div>
-  </section>
+    <!-- intro -->
+    <section
+      class="max-w-7xl mx-auto px-5 sm:px-8 py-20 md:py-24 grid lg:grid-cols-2 gap-14 items-center"
+    >
+      <div class="reveal">
+        <p class="text-ink-soft text-lg leading-relaxed">
+          VisionGuard Security has been protecting homes, retail stores,
+          warehouses, hospitals, schools, and government facilities since 2012.
+          We don't just sell cameras — we design complete surveillance
+          ecosystems tailored to your environment.
+        </p>
+        <p class="mt-4 text-ink-soft text-lg leading-relaxed">
+          Our certified technicians handle everything from initial site
+          assessment to cabling, mounting, DVR/NVR configuration, remote viewing
+          setup, and ongoing maintenance. Every installation is backed by our
+          2-year service guarantee.
+        </p>
+        <ul class="mt-7 space-y-3">
+          <li class="flex items-start gap-3 text-ink-soft">
+            <span class="text-brand-500 mt-0.5">▸</span> Certified CCTV &amp; IP
+            Security Engineers
+          </li>
+          <li class="flex items-start gap-3 text-ink-soft">
+            <span class="text-brand-500 mt-0.5">▸</span> Authorized dealer for
+            Hikvision, Dahua, CP Plus, Axis
+          </li>
+          <li class="flex items-start gap-3 text-ink-soft">
+            <span class="text-brand-500 mt-0.5">▸</span> Remote monitoring &amp;
+            cloud storage solutions
+          </li>
+          <li class="flex items-start gap-3 text-ink-soft">
+            <span class="text-brand-500 mt-0.5">▸</span> Annual Maintenance
+            Contracts (AMC) available
+          </li>
+        </ul>
+        <a
+          href="contact.html"
+          class="mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-brand-500 text-white font-head font-semibold tracking-wide shadow-lg shadow-brand-500/30 transition-all hover:bg-brand-600 hover:-translate-y-0.5"
+        >
+          Talk To Our Team
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <div class="reveal d2 relative">
+        <div class="grid grid-cols-2 gap-5">
+          <div
+            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56"
+          >
+            <span class="text-5xl">🏢</span>
+            <span
+              class="font-mono text-xs tracking-wide text-ink-faint text-center"
+              >Commercial Installation</span
+            >
+          </div>
+          <div
+            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 mt-10"
+          >
+            <span class="text-5xl">🏠</span>
+            <span
+              class="font-mono text-xs tracking-wide text-ink-faint text-center"
+              >Residential Setup</span
+            >
+          </div>
+          <div
+            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 -mt-10"
+          >
+            <span class="text-5xl">🏭</span>
+            <span
+              class="font-mono text-xs tracking-wide text-ink-faint text-center"
+              >Industrial Security</span
+            >
+          </div>
+          <div
+            class="rounded-2xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 p-8 flex flex-col items-center justify-center gap-1 h-56"
+          >
+            <span class="font-head text-5xl font-bold">12+</span>
+            <span class="font-mono text-xs tracking-wide text-center"
+              >Years of Excellence</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- values -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 md:py-24">
-    <div class="max-w-2xl mb-12">
-      <div class="section-label flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] text-brand-600 mb-3">HOW WE WORK</div>
-      <h2 class="font-head font-bold text-[clamp(2rem,4vw,3rem)] leading-tight text-ink">A Process Built On <span class="text-brand-600">Trust.</span></h2>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="reveal bg-white rounded-2xl border border-slate-200 p-7 shadow-sm">
-        <div class="font-mono text-sm text-brand-600">STEP 01</div>
-        <h4 class="mt-3 font-head text-lg font-bold text-ink">Free Site Survey</h4>
-        <p class="mt-2 text-sm text-ink-soft leading-relaxed">We assess your property, identify blind spots and recommend the right coverage.</p>
+    <!-- stats strip -->
+    <section class="bg-white border-y border-slate-200">
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center"
+      >
+        <div class="reveal">
+          <div class="font-head text-4xl font-bold text-brand-600">1,200+</div>
+          <div class="font-mono text-xs text-ink-faint tracking-wide mt-1">
+            Cameras Installed
+          </div>
+        </div>
+        <div class="reveal d1">
+          <div class="font-head text-4xl font-bold text-brand-600">350+</div>
+          <div class="font-mono text-xs text-ink-faint tracking-wide mt-1">
+            Happy Clients
+          </div>
+        </div>
+        <div class="reveal d2">
+          <div class="font-head text-4xl font-bold text-brand-600">24/7</div>
+          <div class="font-mono text-xs text-ink-faint tracking-wide mt-1">
+            Technical Support
+          </div>
+        </div>
+        <div class="reveal d3">
+          <div class="font-head text-4xl font-bold text-brand-600">2 Yr</div>
+          <div class="font-mono text-xs text-ink-faint tracking-wide mt-1">
+            Product Warranty
+          </div>
+        </div>
       </div>
-      <div class="reveal d1 bg-white rounded-2xl border border-slate-200 p-7 shadow-sm">
-        <div class="font-mono text-sm text-brand-600">STEP 02</div>
-        <h4 class="mt-3 font-head text-lg font-bold text-ink">Custom Design</h4>
-        <p class="mt-2 text-sm text-ink-soft leading-relaxed">A tailored system plan with camera placement, cabling routes and a clear quote.</p>
-      </div>
-      <div class="reveal d2 bg-white rounded-2xl border border-slate-200 p-7 shadow-sm">
-        <div class="font-mono text-sm text-brand-600">STEP 03</div>
-        <h4 class="mt-3 font-head text-lg font-bold text-ink">Clean Installation</h4>
-        <p class="mt-2 text-sm text-ink-soft leading-relaxed">Certified engineers install, configure and test every component on site.</p>
-      </div>
-      <div class="reveal d3 bg-white rounded-2xl border border-slate-200 p-7 shadow-sm">
-        <div class="font-mono text-sm text-brand-600">STEP 04</div>
-        <h4 class="mt-3 font-head text-lg font-bold text-ink">Ongoing Support</h4>
-        <p class="mt-2 text-sm text-ink-soft leading-relaxed">AMC plans, firmware updates and emergency callouts keep your system sharp.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- cta -->
-  <section class="relative overflow-hidden bg-white border-t border-slate-200">
-    <div class="absolute inset-0 grid-bg"></div>
-    <div class="relative max-w-3xl mx-auto px-5 sm:px-8 py-20 text-center">
-      <h2 class="font-head font-bold text-[clamp(2rem,4vw,3rem)] leading-tight text-ink">Let's Build Your Security System</h2>
-      <p class="mt-4 text-lg text-ink-soft">From a single camera to a city-wide network — we've got you covered.</p>
-      <a href="contact.html" class="mt-8 inline-flex items-center gap-2 px-9 py-4 rounded-xl bg-brand-500 text-white font-head font-semibold text-lg tracking-wide shadow-xl shadow-brand-500/30 transition-all hover:bg-brand-600 hover:-translate-y-0.5">Get Free Consultation</a>
-    </div>
-  </section>
-  <!-- ======================= FOOTER ======================= -->
-  <!-- ======================= FOOTER ======================= -->
+    <!-- values -->
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 md:py-24">
+      <div class="max-w-2xl mb-12">
+        <div
+          class="section-label flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] text-brand-600 mb-3"
+        >
+          HOW WE WORK
+        </div>
+        <h2
+          class="font-head font-bold text-[clamp(2rem,4vw,3rem)] leading-tight text-ink"
+        >
+          A Process Built On <span class="text-brand-600">Trust.</span>
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="reveal bg-white rounded-2xl border border-slate-200 p-7 shadow-sm"
+        >
+          <div class="font-mono text-sm text-brand-600">STEP 01</div>
+          <h4 class="mt-3 font-head text-lg font-bold text-ink">
+            Free Site Survey
+          </h4>
+          <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+            We assess your property, identify blind spots and recommend the
+            right coverage.
+          </p>
+        </div>
+        <div
+          class="reveal d1 bg-white rounded-2xl border border-slate-200 p-7 shadow-sm"
+        >
+          <div class="font-mono text-sm text-brand-600">STEP 02</div>
+          <h4 class="mt-3 font-head text-lg font-bold text-ink">
+            Custom Design
+          </h4>
+          <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+            A tailored system plan with camera placement, cabling routes and a
+            clear quote.
+          </p>
+        </div>
+        <div
+          class="reveal d2 bg-white rounded-2xl border border-slate-200 p-7 shadow-sm"
+        >
+          <div class="font-mono text-sm text-brand-600">STEP 03</div>
+          <h4 class="mt-3 font-head text-lg font-bold text-ink">
+            Clean Installation
+          </h4>
+          <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+            Certified engineers install, configure and test every component on
+            site.
+          </p>
+        </div>
+        <div
+          class="reveal d3 bg-white rounded-2xl border border-slate-200 p-7 shadow-sm"
+        >
+          <div class="font-mono text-sm text-brand-600">STEP 04</div>
+          <h4 class="mt-3 font-head text-lg font-bold text-ink">
+            Ongoing Support
+          </h4>
+          <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+            AMC plans, firmware updates and emergency callouts keep your system
+            sharp.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section
+      class="relative overflow-hidden bg-white border-t border-slate-200"
+    >
+      <div class="absolute inset-0 grid-bg"></div>
+      <div class="relative max-w-3xl mx-auto px-5 sm:px-8 py-20 text-center">
+        <h2
+          class="font-head font-bold text-[clamp(2rem,4vw,3rem)] leading-tight text-ink"
+        >
+          Let's Build Your Security System
+        </h2>
+        <p class="mt-4 text-lg text-ink-soft">
+          From a single camera to a city-wide network — we've got you covered.
+        </p>
+        <a
+          href="contact.html"
+          class="mt-8 inline-flex items-center gap-2 px-9 py-4 rounded-xl bg-brand-500 text-white font-head font-semibold text-lg tracking-wide shadow-xl shadow-brand-500/30 transition-all hover:bg-brand-600 hover:-translate-y-0.5"
+          >Get Free Consultation</a
+        >
+      </div>
+    </section>
+    <!-- ======================= FOOTER ======================= -->
     <footer class="bg-ink text-slate-300">
       <div
         class="max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-10 grid gap-12 md:grid-cols-2 lg:grid-cols-4"
@@ -317,7 +420,7 @@
         <div class="lg:col-span-1">
           <a href="index.html" class="flex items-center gap-2.5">
             <span
-              class="grid place-items-center w-9 h-9 rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden"
+              class="grid place-items-center w-20 h-14 rounded-xl bg-white text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden"
             >
               <img
                 src="logo.png"
@@ -325,10 +428,6 @@
                 class="w-full h-full object-cover"
               />
             </span>
-            <span
-              class="font-head text-xl font-medium tracking-wider text-white"
-              >VISION<strong class="font-bold text-brand-400">IT</strong></span
-            >
           </a>
           <p class="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
             Protecting what matters most. Professional CCTV sales and
@@ -519,7 +618,7 @@
           class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] tracking-wide text-slate-500"
         >
           <span
-            >© <span id="footerYear">2025</span> VisionIT Security. All rights
+            >© <span id="footerYear">2025</span>  Vision IT Trade. All rights
             reserved.</span
           >
           <span class="flex gap-4"
@@ -533,7 +632,6 @@
       </div>
     </footer>
 
-
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

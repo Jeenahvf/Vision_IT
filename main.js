@@ -1,4 +1,34 @@
-document.addEventListener('DOMContentLoaded', () => {
+
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#f7f8fa",
+                100: "#e7eaf0",
+                200: "#ccd2db",
+                300: "#aab2bb",
+                400: "#FFC500",
+                500: "#253242",
+                600: "#1b2531",
+                700: "#151d28",
+                800: "#111821",
+                900: "#09101a",
+                accent: "#FFC500",
+              },
+              ink: { DEFAULT: "#253242", soft: "#42536a", faint: "#b4bbc6" },
+              paper: "#f7f8fa",
+            },
+            fontFamily: {
+              head: ["Rajdhani", "sans-serif"],
+              body: ["Barlow", "sans-serif"],
+              mono: ['"Share Tech Mono"', "monospace"],
+            },
+          },
+        },
+      };
+  
+      document.addEventListener('DOMContentLoaded', () => {
     
   /* ---- Navbar: shadow on scroll ---- */
   const navbar = document.getElementById('navbar');

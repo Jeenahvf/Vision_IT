@@ -11,35 +11,6 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: "#f0f9ff",
-                100: "#e0f2fe",
-                200: "#bae6fd",
-                300: "#7dd3fc",
-                400: "#38bdf8",
-                500: "#0ea5e9",
-                600: "#0284c7",
-                700: "#0369a1",
-                800: "#075985",
-                900: "#0c4a6e",
-              },
-              ink: { DEFAULT: "#1e293b", soft: "#475569", faint: "#94a3b8" },
-              paper: "#f6f8fb",
-            },
-            fontFamily: {
-              head: ["Rajdhani", "sans-serif"],
-              body: ["Barlow", "sans-serif"],
-              mono: ['"Share Tech Mono"', "monospace"],
-            },
-          },
-        },
-      };
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -59,7 +30,7 @@
           <!-- Logo -->
           <a href="index.html" class="flex items-center gap-2.5 group">
             <span
-              class="grid place-items-center w-9 h-9 rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden"
+              class="grid place-items-center w-24 h-14 rounded-xl shadow-lg transition-transform group-hover:scale-105 overflow-hidden"
             >
               <img
                 src="logo.png"
@@ -67,9 +38,6 @@
                 class="w-full h-full object-cover"
               />
             </span>
-            <span class="font-head text-xl font-medium tracking-wider text-ink"
-              >VISION<strong class="font-bold text-brand-600">IT</strong></span
-            >
           </a>
 
           <!-- Desktop links -->
@@ -108,7 +76,7 @@
                 >Gallery</a
               >
             </li>
-            <li>
+            <!-- <li>
               <a
                 data-nav="blog.html"
                 class="nav-link transition-colors hover:text-ink"
@@ -123,16 +91,16 @@
                 href="reviews.html"
                 >Reviews</a
               >
-            </li>
+            </li> -->
           </ul>
 
           <!-- CTA + hamburger -->
           <div class="flex items-center gap-3">
             <a
               href="contact.html"
-              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-head font-semibold text-sm tracking-wide shadow-lg shadow-brand-500/25 transition-all hover:bg-brand-600 hover:shadow-brand-500/40 hover:-translate-y-0.5"
+              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-900 text-white font-head font-semibold text-sm tracking-wide shadow-lg shadow-brand-500/25 transition-all hover:bg-brand-400 hover:shadow-brand-500/40 hover:-translate-y-0.5"
             >
-              Get a Quote
+              Any Queries?
               <svg
                 class="w-4 h-4"
                 viewBox="0 0 24 24"
@@ -343,7 +311,7 @@
         </div>
 
         <!-- Commercial: office complex -->
-         <div
+        <div
           class="gallery-item group relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:shadow-brand-500/10"
           data-cat="commercial"
         >
@@ -370,7 +338,7 @@
           </div>
         </div>
 
-    <!-- Industrial: factory -->
+        <!-- Industrial: factory -->
         <div
           class="gallery-item group relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:shadow-brand-500/10"
           data-cat="industrial"
@@ -397,7 +365,7 @@
             </p>
           </div>
         </div>
-        
+
         <div
           class="gallery-item group relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:shadow-brand-500/10"
           data-cat="residential"
@@ -422,7 +390,7 @@
             </p>
           </div>
         </div>
-        
+
         <div
           class="gallery-item group relative rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:shadow-brand-500/10"
           data-cat="commercial"
@@ -527,7 +495,7 @@
         <div class="lg:col-span-1">
           <a href="index.html" class="flex items-center gap-2.5">
             <span
-              class="grid place-items-center w-9 h-9 rounded-xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden"
+              class="grid place-items-center w-20 h-14 rounded-xl bg-white text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden"
             >
               <img
                 src="logo.png"
@@ -535,10 +503,6 @@
                 class="w-full h-full object-cover"
               />
             </span>
-            <span
-              class="font-head text-xl font-medium tracking-wider text-white"
-              >VISION<strong class="font-bold text-brand-400">IT</strong></span
-            >
           </a>
           <p class="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
             Protecting what matters most. Professional CCTV sales and
@@ -729,7 +693,7 @@
           class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] tracking-wide text-slate-500"
         >
           <span
-            >© <span id="footerYear">2025</span> VisionIT Security. All rights
+            >© <span id="footerYear">2025</span>  Vision IT Trade. All rights
             reserved.</span
           >
           <span class="flex gap-4"
