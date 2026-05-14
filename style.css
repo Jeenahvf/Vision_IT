@@ -1,0 +1,203 @@
+/* ============================================================
+   VisionGuard — style.css
+   Theme: Vision It Trade — Sunburst Yellow + Charcoal Slate
+   Tailwind handles layout/spacing; this file adds fonts,
+   keyframe animations, and a few custom utility classes.
+   Based on colors extracted from logo.png.
+   ============================================================ */
+
+/* ---- BASE ---- */
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Barlow', sans-serif;
+  background: #fdfdfd; /* Pure white background for high contrast */
+  color: #303641;    /* Primary text: Logo Charcoal Slate */
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-head { font-family: 'Rajdhani', sans-serif; }
+.font-body { font-family: 'Barlow', sans-serif; }
+.font-mono { font-family: 'Share Tech Mono', monospace; }
+
+/* ---- NAVBAR ---- */
+#navbar {
+  transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease, backdrop-filter .3s ease;
+}
+#navbar.nav-scrolled {
+  background: rgba(253, 253, 253, 0.9); /* Opaque match for white background */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 24px -8px rgba(48, 54, 65, 0.15); /* Shadow using Charcoal Slate color */
+  border-color: #e2e8f0;
+}
+
+/* Active / hover underline for desktop nav links */
+.nav-link {
+  position: relative;
+  color: #303641; /* Links: Charcoal Slate */
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: #FFC500; /* Underline: Sunburst Yellow */
+  border-radius: 2px;
+  transition: width .3s ease;
+}
+.nav-link:hover { color: #000000; } /* Subtle hover contrast */
+.nav-link:hover::after { width: 100%; }
+.nav-link.nav-active { color: #FFC500; } /* Active text: Sunburst Yellow */
+.nav-link.nav-active::after { width: 100%; }
+
+/* Hamburger animation */
+.hamburger span {
+  background-color: #303641; /* Charcoal Slate bars */
+  transition: transform .3s ease, opacity .3s ease;
+}
+.hamburger.is-active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.is-active span:nth-child(2) { opacity: 0; }
+.hamburger.is-active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu slide */
+#mobileMenu {
+  background: #fdfdfd; /* Match body background */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease;
+}
+#mobileMenu.open { max-height: 520px; }
+
+/* ---- TICKER ---- */
+.ticker-track {
+  display: flex;
+  gap: 3.5rem;
+  white-space: nowrap;
+  width: max-content;
+  animation: ticker-scroll 32s linear infinite;
+  color: #F7B84B; /* Goldenrod text derived from logo gradient */
+}
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---- HERO ANIMATIONS ---- */
+@keyframes cam-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+.cam-float { animation: cam-float 4s ease-in-out infinite; }
+
+@keyframes ring-pulse {
+  0%   { transform: translate(-50%, -50%) scale(0.4); opacity: .7; }
+  100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
+}
+.ring-pulse { animation: ring-pulse 3.2s ease-out infinite; }
+.ring-pulse.r2 { animation-delay: 1.05s; }
+.ring-pulse.r3 { animation-delay: 2.1s; }
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .25; }
+}
+.blink-dot {
+  animation: blink-dot 1.5s ease-in-out infinite;
+  background-color: #FFC500; /* Dot color: Sunburst Yellow */
+}
+
+@keyframes led-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .15; }
+}
+.led-blink {
+  animation: led-blink 2s step-end infinite;
+  color: #FFC500; /* LED text blink: Sunburst Yellow */
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: .55; }
+}
+.pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
+
+@keyframes scroll-line {
+  0%, 100% { transform: scaleY(.4); opacity: .35; }
+  50%      { transform: scaleY(1); opacity: 1; }
+}
+.scroll-line { 
+  animation: scroll-line 2s ease-in-out infinite; 
+  transform-origin: top;
+  background-color: #303641; /* Scroll indicator: Charcoal Slate */
+}
+
+/* Subtle grid background used on hero / CTA */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 197, 0, 0.04) 1px, transparent 1px), /* Very faint Sunburst Yellow grid */
+    linear-gradient(90deg, rgba(255, 197, 0, 0.04) 1px, transparent 1px);
+  background-size: 54px 54px;
+  -webkit-mask-image: radial-gradient(ellipse 75% 75% at 50% 45%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 75% 75% at 50% 45%, #000 30%, transparent 100%);
+}
+
+/* ---- SCROLL REVEAL ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal.d1 { transition-delay: .08s; }
+.reveal.d2 { transition-delay: .16s; }
+.reveal.d3 { transition-delay: .24s; }
+.reveal.d4 { transition-delay: .32s; }
+.reveal.d5 { transition-delay: .40s; }
+
+/* ---- GALLERY ---- */
+.gallery-item {
+  transition: opacity .4s ease, transform .4s ease, box-shadow .3s ease;
+}
+.filter-btn {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+}
+.filter-btn:hover {
+  border-color: #F7B84B; /* Hover border: Goldenrod */
+  color: #FFC500;        /* Hover text: Sunburst Yellow */
+  background: rgba(255, 197, 0, 0.03);
+}
+.filter-btn.filter-active {
+  background: #FFC500;   /* Active background: Sunburst Yellow */
+  border-color: #FFC500;
+  color: #ffffff;
+  box-shadow: 0 8px 20px -6px rgba(255, 197, 0, 0.3); /* Shadow: Tint of Sunburst Yellow */
+}
+
+/* ---- MISC ---- */
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  background: #FFC500; /* Section mark: Sunburst Yellow */
+  border-radius: 2px;
+}
+.section-label.center { justify-content: center; }
+.section-label.center::before { display: none; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
