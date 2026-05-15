@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisionIT Security — Camera Sales & Installation</title>
+    <meta
+      name="description"
+      content="Professional CCTV cameras, IP surveillance systems and expert installation for homes, businesses and industrial facilities."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-body bg-paper text-ink antialiased">
+    <!-- ======================= NAVBAR ======================= -->
+    <nav
+      id="navbar"
+      class="fixed top-0 inset-x-0 z-50 border-b border-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="flex items-center justify-between h-[72px]">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <span
+              class="grid place-items-center w-24 h-14 rounded-xl shadow-lg transition-transform group-hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="logo.png"
+                alt="Icon Description"
+                class="w-full h-full object-cover"
+              />
+            </span>
+          </a>
+
+          <!-- Desktop links -->
+          <ul
+            class="hidden lg:flex items-center gap-9 font-head text-[0.95rem] font-semibold tracking-wide text-ink-soft"
+          >
+            <li>
+              <a
+                data-nav="index.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="about.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="services.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="gallery.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <!-- <li>
+              <a
+                data-nav="blog.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="reviews.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="reviews.html"
+                >Reviews</a
+              >
+            </li> -->
+          </ul>
+
+          <!-- CTA + hamburger -->
+          <div class="flex items-center gap-3">
+            <a
+              href="contact.html"
+              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-900 text-white font-head font-semibold text-sm tracking-wide shadow-lg shadow-brand-500/25 transition-all hover:bg-brand-400 hover:shadow-brand-500/40 hover:-translate-y-0.5"
+            >
+              Any Queries?
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+            <button
+              id="hamburger"
+              class="hamburger lg:hidden grid gap-1.5 p-2 -mr-2"
+              aria-label="Toggle menu"
+            >
+              <span class="block w-6 h-0.5 bg-ink rounded-full"></span>
+              <span class="block w-6 h-0.5 bg-ink rounded-full"></span>
+              <span class="block w-6 h-0.5 bg-ink rounded-full"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200"
+      >
+        <div
+          class="px-5 py-4 flex flex-col font-head font-semibold tracking-wide"
+        >
+          <a
+            href="index.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >About</a
+          >
+          <a
+            href="services.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Services</a
+          >
+          <a
+            href="gallery.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Gallery</a
+          >
+          <a
+            href="blog.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Blog</a
+          >
+          <a
+            href="reviews.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Reviews</a
+          >
+          <a
+            href="contact.html"
+            class="mt-3 py-3 text-center rounded-xl bg-brand-500 text-white"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </nav>
+
+
+  <!-- ======================= PAGE BANNER ======================= -->
+  <section class="relative overflow-hidden pt-[72px] border-b border-slate-200 bg-white">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="absolute -top-24 right-0 w-96 h-96 bg-brand-100/60 rounded-full blur-3xl"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20">
+      <div class="section-label flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] text-brand-600 mb-3">LEGAL</div>
+      <h1 class="font-head font-bold text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.08] text-ink max-w-3xl">Terms of <span class="text-brand-600">Service</span></h1>
+      <p class="mt-4 text-lg text-ink-soft max-w-2xl">The terms on which we sell products, provide installation services, and operate our website — under the laws of Nepal.</p>
+      <div class="mt-6 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-paper border border-brand-400 font-mono text-[11px] tracking-widest text-brand-400">
+        LAST UPDATED · 15 MAY 2026
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= LEGAL CONTENT ======================= -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20">
+    <div class="grid lg:grid-cols-[260px_1fr] gap-10 lg:gap-14">
+
+      <!-- Sticky TOC -->
+      <aside class="lg:sticky lg:top-[96px] lg:self-start">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+          <div class="font-mono text-[11px] tracking-widest text-brand-600 mb-3">ON THIS PAGE</div>
+          <ol class="space-y-0.5 list-none">
+            <li><a href="#acceptance" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">1. Acceptance of Terms</a></li><li><a href="#about-us" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">2. About VisionGuard</a></li><li><a href="#eligibility" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">3. Eligibility</a></li><li><a href="#products" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">4. Products, Pricing &amp; Availability</a></li><li><a href="#orders" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">5. Orders &amp; Quotations</a></li><li><a href="#payment" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">6. Payment Terms</a></li><li><a href="#delivery" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">7. Delivery &amp; Pick-Up</a></li><li><a href="#install" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">8. Installation Services</a></li><li><a href="#warranty" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">9. Warranty</a></li><li><a href="#returns" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">10. Returns, Exchange &amp; Refunds</a></li><li><a href="#consumer" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">11. Your Rights as a Consumer</a></li><li><a href="#liability" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">12. Limitation of Liability</a></li><li><a href="#force" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">13. Force Majeure</a></li><li><a href="#ip" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">14. Intellectual Property</a></li><li><a href="#use" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">15. Acceptable Use of the Website</a></li><li><a href="#third" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">16. Third-Party Links</a></li><li><a href="#changes" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">17. Changes to These Terms</a></li><li><a href="#law" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">18. Governing Law &amp; Jurisdiction</a></li><li><a href="#contact" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">19. Contact</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <!-- Body -->
+      <div class="min-w-0">
+        
+        <!-- Disclaimer -->
+        <div class="reveal mb-10 rounded-2xl border-l-4 border-brand-500 bg-brand-50/60 p-6">
+          <div class="font-mono text-[11px] tracking-widest text-brand-700 mb-2">PLEASE NOTE</div>
+          <p class="text-sm text-ink-soft leading-relaxed">
+            This document is provided in good faith to explain how VisionGuard Security &amp; Hardware operates under Nepali law. It is not legal advice. If you require legal interpretation, please consult a qualified advocate enrolled with the Nepal Bar Council. The Nepali (Devanagari) version of this document, where it exists, shall prevail in case of any conflict with this English text.
+          </p>
+        </div>
+
+        
+        <section id="acceptance" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">01</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Acceptance of Terms</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>These Terms of Service ("Terms") govern your relationship with VisionGuard Security &amp; Hardware ("we", "us", "the Store") when you visit our store at New Baneshwor, Kathmandu, browse our website, or purchase goods and services from us. By placing an order, accepting a quotation, paying for goods, or making any other transaction with us, you confirm that you have read and accepted these Terms.</p>
+          </div>
+        </section>
+        <section id="about-us" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">02</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">About VisionGuard</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>VisionGuard Security &amp; Hardware is a retail and installation business operating in Kathmandu, Nepal, registered with the relevant authorities under the laws of Nepal. We supply CCTV cameras, locks and access-control hardware, power and hand tools, electrical and plumbing supplies, paint and building materials, and we provide installation services for many of these products.</p>
+          </div>
+        </section>
+        <section id="eligibility" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">03</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Eligibility</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>To purchase from us or enter into a service agreement, you must be at least eighteen (18) years of age and legally competent to enter into a binding contract under the laws of Nepal. Trade and corporate customers must be duly registered with the relevant authorities and able to provide PAN/VAT details where applicable.</p>
+          </div>
+        </section>
+        <section id="products" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">04</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Products, Pricing &amp; Availability</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We make reasonable efforts to display accurate descriptions, specifications, images and prices for the products we sell. However:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Product images and descriptions are for general guidance; actual items may vary slightly due to manufacturer revisions or batch differences.</li>
+          <li>All prices are quoted in Nepalese Rupees (NPR) and, unless otherwise stated, are <strong>exclusive of Value Added Tax (VAT) at the rate applicable under prevailing law</strong>.</li>
+          <li>Prices may change at any time without prior notice; the price applicable to your order is the price confirmed on your tax invoice or accepted quotation.</li>
+          <li>Stock availability is subject to confirmation. Where an item is not in stock, we will inform you of the expected lead time before accepting the order.</li>
+        </ul>
+        <p>Where we discover a clear pricing or description error before delivery, we reserve the right to cancel the affected order and refund any amount already paid.</p>
+          </div>
+        </section>
+        <section id="orders" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">05</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Orders &amp; Quotations</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Orders may be placed at our store, by telephone or WhatsApp, by email, or through our website contact form. A written or electronic quotation issued by us is valid for fifteen (15) days from the date of issue unless stated otherwise.</p>
+        <p>An order is treated as accepted by VisionGuard only once we issue an order confirmation or tax invoice. Until then, we reserve the right to decline any order — for example, where the requested item is unavailable, the quoted price was clearly incorrect, or we have reason to suspect fraudulent activity.</p>
+          </div>
+        </section>
+        <section id="payment" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">06</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Payment Terms</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We accept payment by cash, bank transfer, and the following Nepal-based digital wallets and payment processors (subject to change): <strong>eSewa, Khalti, IME Pay, ConnectIPS</strong>, and major debit/credit cards. Cheque payments may be accepted at our discretion for established trade customers.</p>
+        <p>For bulk orders, custom items, or large installation jobs, an advance payment of up to fifty percent (50%) may be required, with the balance due before delivery or upon completion of installation, as agreed in writing.</p>
+        <p>Title to goods passes to the customer only after payment has been received in full. Until that point, the goods remain the property of VisionGuard.</p>
+          </div>
+        </section>
+        <section id="delivery" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">07</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Delivery &amp; Pick-Up</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>You may collect ordered goods from our store, or request delivery within Kathmandu Valley and selected areas of Nepal. Delivery charges, if any, will be quoted at the time of ordering.</p>
+        <p>Delivery time-frames provided are estimates based on supplier and courier conditions. While we make reasonable efforts to deliver on schedule, we are not liable for delays caused by circumstances beyond our reasonable control (see section 13).</p>
+        <p>Risk in the goods passes to you upon delivery or, in the case of in-store pick-up, upon hand-over at the counter. Please inspect goods at the time of delivery and notify us of any visible damage or shortage within twenty-four (24) hours.</p>
+          </div>
+        </section>
+        <section id="install" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">08</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Installation Services</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Where you have engaged our installation team — for example, for CCTV systems, smart locks, electrical fittings or plumbing — the following additional terms apply:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>We will perform a site assessment, agree the scope of work in writing, and complete installation in a workmanlike manner.</li>
+          <li>You are responsible for ensuring safe and reasonable access to the site and for confirming the suitability of the location (for example, the integrity of walls, availability of power, lawful permission to install fittings).</li>
+          <li>Installation does not include unrelated repair or modification work to your property; any such additional work will be quoted separately.</li>
+          <li>If you cancel an installation appointment less than twenty-four (24) hours in advance, we may charge a reasonable visit fee.</li>
+        </ul>
+          </div>
+        </section>
+        <section id="warranty" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">09</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Warranty</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Manufacturer warranties apply to most products we sell. The warranty period, scope and claim procedure are those specified by the manufacturer and printed on the warranty card supplied with the product. As an authorised reseller for several brands, we will assist you in submitting valid warranty claims.</p>
+        <p>Where we provide installation, we additionally warrant the workmanship of our installation for a period of <strong>two (2) years</strong> from the date of completion, subject to reasonable use and no third-party tampering.</p>
+        <p>Warranty does not cover damage caused by misuse, accident, unauthorised modification, normal wear and tear, voltage fluctuations beyond manufacturer-rated limits, or events of force majeure.</p>
+          </div>
+        </section>
+        <section id="returns" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">10</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Returns, Exchange &amp; Refunds</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>In keeping with the Consumer Protection Act, 2075 (2018):</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li><strong>Defective or wrong items</strong> may be returned within seven (7) days of purchase, in their original packaging and accompanied by the tax invoice, for a free replacement, repair or full refund — at the customer's option, subject to the nature of the defect.</li>
+          <li><strong>Change-of-mind returns</strong> are accepted at our discretion within three (3) days of purchase, for unopened and unused goods in re-saleable condition. A restocking fee may apply.</li>
+          <li><strong>Custom-cut, custom-ordered or made-to-order items</strong> (for example, cut cable lengths, special-order safes, bespoke locks) cannot be returned unless defective.</li>
+          <li>Refunds will be issued by the same method used for the original payment, within a reasonable period not normally exceeding fifteen (15) working days.</li>
+        </ul>
+          </div>
+        </section>
+        <section id="consumer" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">11</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Your Rights as a Consumer</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Nothing in these Terms limits or excludes any right you have as a consumer under the Consumer Protection Act, 2075 (2018) and Sections 107 to 110 of the National Penal Code, 2074 (2017). These include, among others, your right to safety, your right to be informed about the price and quality of goods, your right to choose, and your right to seek legal remedy for unfair trade practices.</p>
+        <p>If you believe we have failed to meet our obligations to you as a consumer, please first contact us so that we may resolve the matter directly. You may also lodge a complaint with the District Administration Office, the Department of Commerce, Supplies and Consumer Protection, the Nepal Police, or the relevant consumer court.</p>
+          </div>
+        </section>
+        <section id="liability" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">12</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Limitation of Liability</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>To the maximum extent permitted by Nepali law, our total liability to you for any claim arising from a single transaction — whether in contract, tort or under any statute — is limited to the price actually paid by you for the specific product or service that gave rise to the claim.</p>
+        <p>We are not liable for indirect, incidental or consequential loss, including loss of profit, loss of opportunity or loss of data, except where such liability cannot be excluded by law. Nothing in this section excludes liability for death or personal injury caused by our negligence, or for fraud.</p>
+          </div>
+        </section>
+        <section id="force" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">13</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Force Majeure</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We are not liable for any delay or failure to perform our obligations caused by circumstances beyond our reasonable control, including but not limited to: earthquakes and other natural disasters, fire, flood, strikes, transport disruption, bandhs, civil unrest, war, epidemic or pandemic, power or telecommunications failure, or restrictions imposed by the Government of Nepal.</p>
+          </div>
+        </section>
+        <section id="ip" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">14</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Intellectual Property</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>The VisionGuard name, logo, website design, photographs and written content are protected under the Copyright Act, 2059 (2002) and other applicable laws of Nepal. You may not copy, reproduce, republish or commercially exploit any of this material without our prior written consent. Product brand names and logos shown on our site or in our marketing belong to their respective manufacturers and are used for descriptive purposes only.</p>
+          </div>
+        </section>
+        <section id="use" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">15</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Acceptable Use of the Website</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>When using our website you agree not to:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Submit false, misleading or fraudulent information.</li>
+          <li>Use the site in a manner that could damage, disable or impair its operation, including by introducing malware or attempting unauthorised access.</li>
+          <li>Use any automated means to scrape, copy or harvest content or contact details.</li>
+          <li>Use the site for any purpose that is unlawful under the Electronic Transactions Act, 2063 (2008) or any other applicable law of Nepal.</li>
+        </ul>
+        <p>We may suspend or block access to anyone who breaches these conditions.</p>
+          </div>
+        </section>
+        <section id="third" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">16</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Third-Party Links</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Our website or written communications may contain links to third-party websites (for example, manufacturer product pages or payment provider sites). We are not responsible for the content, accuracy or practices of those third-party sites. Visiting them is at your own risk and subject to their own terms.</p>
+          </div>
+        </section>
+        <section id="changes" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">17</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Changes to These Terms</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We may revise these Terms from time to time. The version applicable to your transaction is the one in force on the date of that transaction. The latest version is always available on this page, with the "Last Updated" date shown at the top.</p>
+          </div>
+        </section>
+        <section id="law" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">18</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Governing Law &amp; Jurisdiction</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>These Terms, and any dispute arising out of or in connection with them, are governed by and construed in accordance with the laws of the Federal Democratic Republic of Nepal. The courts of <strong>Kathmandu District, Bagmati Province</strong> shall have exclusive jurisdiction over any such dispute, without prejudice to any consumer-protection remedy available to you under Nepali law.</p>
+        <p>The parties agree to first attempt good-faith negotiation before commencing any formal proceeding.</p>
+          </div>
+        </section>
+        <section id="contact" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">19</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Contact</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>For any questions about these Terms, please use the contact details in the box below.</p>
+          </div>
+        </section>
+
+        <!-- Contact block -->
+        <div class="mt-12 rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="font-head text-xl font-bold text-ink">Questions About This Document?</h3>
+          <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+            If anything here is unclear, or you'd like to exercise a right described above, contact us:
+          </p>
+          <ul class="mt-4 space-y-1.5 text-sm text-ink-soft">
+            <li><strong class="text-ink">VisionGuard Security &amp; Hardware</strong></li>
+            <li>New Baneshwor, Kathmandu 44600, Bagmati Province, Nepal</li>
+            <li>Phone / WhatsApp: +977 98XXXXXXXX</li>
+            <li>Email: <a href="mailto:info@visionguard.com.np" class="text-brand-600 hover:underline">info@visionguard.com.np</a></li>
+          </ul>
+          <a href="contact.html" class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-head font-semibold text-sm transition-all hover:bg-brand-600">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="bg-ink text-slate-300">
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-10 grid gap-12 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-2.5 ">
+            <span
+              class="grid place-items-center w-20 h-14 rounded-xl bg-white text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden "
+            >
+              <img
+                src="logo.png"
+                alt="Icon Description"
+                class="w-full h-full object-cover"
+              />
+            </span>
+    
+          </a>
+          <p class="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
+            Protecting what matters most. Professional CCTV sales and
+            installation since 2012.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M18.9 1.2h3.7l-8 9.1L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.5-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3H4.4L17.6 20.6Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.4 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.17C2.41 10.1 2.4 10.45 2.4 12s.01 1.9.07 3.16c.05 1.14.24 1.76.4 2.17.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.26.07-1.61.07-3.16s-.01-1.9-.07-3.16c-.05-1.14-.24-1.76-.4-2.17a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.17-.4C15.5 4.01 15.15 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 8.14A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4Zm6.3-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4
+            class="font-head text-sm font-bold tracking-widest text-white uppercase mb-5"
+          >
+            Quick Links
+          </h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a
+                href="index.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="font-head text-sm font-bold tracking-widest text-white uppercase mb-5"
+          >
+            Services
+          </h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >CCTV Camera Sales</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Professional Installation</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >IP Surveillance</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Access Control</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Cloud Monitoring</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >AMC Plans</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="font-head text-sm font-bold tracking-widest text-white uppercase mb-5"
+          >
+            Get In Touch
+          </h4>
+          <ul class="space-y-3 text-sm text-slate-400">
+            <li class="flex gap-2.5">
+              <span class="text-brand-400 mt-0.5">📍</span> New Baneshwor,
+              Kathmandu 44600, Nepal
+            </li>
+            <li class="flex gap-2.5">
+              <span class="text-brand-400 mt-0.5">📞</span> +977 98XXXXXXXX
+            </li>
+            <li class="flex gap-2.5">
+              <span class="text-brand-400 mt-0.5">✉️</span>
+              info@visionit.com.np
+            </li>
+          </ul>
+          <a
+            href="contact.html"
+            class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-head font-semibold text-sm transition-all hover:bg-brand-600"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <div
+          class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] tracking-wide text-slate-500"
+        >
+          <span
+            >© <span id="footerYear">2025</span> Vision IT Trade. All rights
+            reserved.</span
+          >
+          <span class="flex gap-4"
+            ><a href="privacy.html" class="hover:text-brand-400 transition-colors"
+              >Privacy Policy</a
+            ><a href="terms.html" class="hover:text-brand-400 transition-colors"
+              >Terms of Service</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,5 +1,4 @@
-
-      tailwind.config = {
+tailwind.config = {
         theme: {
           extend: {
             colors: {
@@ -27,9 +26,73 @@
           },
         },
       };
-  
-      document.addEventListener('DOMContentLoaded', () => {
-    
+      
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---- Custom cursor (dot + trailing ring) ---- */
+  const cursor = document.querySelector('.cursor');
+  const trail = document.querySelector('.cursor-trail');
+  // Only enable on devices with a fine pointer (real mouse) — skip touch screens.
+  const finePointer = window.matchMedia('(pointer: fine)').matches;
+
+  if (cursor && trail && finePointer) {
+    document.body.classList.add('cursor-enabled');
+
+    let mouseX = window.innerWidth / 2,  mouseY = window.innerHeight / 2;
+    let trailX = mouseX, trailY = mouseY;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      // Dot follows instantly
+      cursor.style.left = mouseX + 'px';
+      cursor.style.top  = mouseY + 'px';
+    });
+
+    // Ring eases toward the pointer for a smooth trailing effect
+    const animateTrail = () => {
+      trailX += (mouseX - trailX) * 0.18;
+      trailY += (mouseY - trailY) * 0.18;
+      trail.style.left = trailX + 'px';
+      trail.style.top  = trailY + 'px';
+      requestAnimationFrame(animateTrail);
+    };
+    requestAnimationFrame(animateTrail);
+
+    // Grow + tint over interactive elements
+    const interactive = 'a, button, input, textarea, select, label, .filter-btn';
+    document.querySelectorAll(interactive).forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.classList.add('cursor-hover');
+        trail.classList.add('cursor-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('cursor-hover');
+        trail.classList.remove('cursor-hover');
+      });
+    });
+
+    // Click feedback
+    document.addEventListener('mousedown', () => {
+      cursor.classList.add('cursor-click');
+      trail.classList.add('cursor-click');
+    });
+    document.addEventListener('mouseup', () => {
+      cursor.classList.remove('cursor-click');
+      trail.classList.remove('cursor-click');
+    });
+
+    // Hide when the pointer leaves the window, show again on return
+    document.addEventListener('mouseleave', () => {
+      cursor.style.opacity = '0';
+      trail.style.opacity = '0';
+    });
+    document.addEventListener('mouseenter', () => {
+      cursor.style.opacity = '1';
+      trail.style.opacity = '1';
+    });
+  }
+
   /* ---- Navbar: shadow on scroll ---- */
   const navbar = document.getElementById('navbar');
   if (navbar) {
@@ -98,7 +161,7 @@
     });
   }
 
-  //Contact form
+  /* ---- Contact form ---- */
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', e => {
@@ -118,7 +181,7 @@
     });
   }
 
-// Footer year 
+  /* ---- Footer year ---- */
   const yearEl = document.getElementById('footerYear');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 

@@ -205,10 +205,10 @@
     >
       <div class="reveal">
         <p class="text-ink-soft text-lg leading-relaxed">
-          VisionGuard Security has been protecting homes, retail stores,
-          warehouses, hospitals, schools, and government facilities since 2022.
-          We don't just sell cameras — we design complete surveillance
-          ecosystems tailored to your environment.
+          Vision IT Trade has been protecting homes, retail stores, warehouses,
+          hospitals, schools, and government facilities since 2022. We don't
+          just sell cameras — we design complete surveillance ecosystems
+          tailored to your environment.
         </p>
         <p class="mt-4 text-ink-soft text-lg leading-relaxed">
           Our certified technicians handle everything from initial site
@@ -218,19 +218,19 @@
         </p>
         <ul class="mt-7 space-y-3">
           <li class="flex items-start gap-3 text-ink-soft">
-            <span class="text-brand-500 mt-0.5">▸</span> Certified CCTV &amp; IP
+            <span class="text-brand-400 mt-0.5">▸</span> Certified CCTV &amp; IP
             Security Engineers
           </li>
           <li class="flex items-start gap-3 text-ink-soft">
-            <span class="text-brand-500 mt-0.5">▸</span> Authorized dealer for
+            <span class="text-brand-400 mt-0.5">▸</span> Authorized dealer for
             Hikvision, Dahua, CP Plus, Axis
           </li>
           <li class="flex items-start gap-3 text-ink-soft">
-            <span class="text-brand-500 mt-0.5">▸</span> Remote monitoring &amp;
+            <span class="text-brand-400 mt-0.5">▸</span> Remote monitoring &amp;
             cloud storage solutions
           </li>
           <li class="flex items-start gap-3 text-ink-soft">
-            <span class="text-brand-500 mt-0.5">▸</span> Annual Maintenance
+            <span class="text-brand-400 mt-0.5">▸</span> Annual Maintenance
             Contracts (AMC) available
           </li>
         </ul>
@@ -254,35 +254,60 @@
       </div>
       <div class="reveal d2 relative">
         <div class="grid grid-cols-2 gap-5">
+          <!-- Card 1: Commercial -->
           <div
-            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56"
+            class="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 group"
           >
-            <span class="text-5xl">🏢</span>
+            <!-- Background Image -->
+            <img
+              src="images/shoppingmall.png"
+              class="absolute inset-0 w-full h-full object-cover z-0"
+              alt="Commercial"
+            />
+            <!-- Dark Overlay to keep text readable -->
+            <div class="absolute inset-0 bg-black/10 z-10"></div>
+            <!-- Content -->
             <span
-              class="font-mono text-xs tracking-wide text-ink-faint text-center"
+              class="relative font-mono text-xs font-bold tracking-wide text-white text-center z-20"
               >Commercial Installation</span
             >
           </div>
+
+          <!-- Card 2: Residential -->
           <div
-            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 mt-10"
+            class="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 mt-10 group"
           >
-            <span class="text-5xl">🏠</span>
+            <img
+              src="images/office.png"
+              class="absolute inset-0 w-full h-full object-cover z-0"
+              alt="Residential"
+            />
+            <div class="absolute inset-0 bg-black/10 z-10"></div>
             <span
-              class="font-mono text-xs tracking-wide text-ink-faint text-center"
+              class="relative font-mono text-xs font-bold tracking-wide text-white text-center z-20"
               >Residential Setup</span
             >
           </div>
+
+          <!-- Card 3: Industrial -->
           <div
-            class="rounded-2xl border border-slate-200 bg-white shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 -mt-10"
+            class="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm p-8 flex flex-col items-center justify-center gap-3 h-56 -mt-10 group"
           >
-            <span class="text-5xl">🏭</span>
+            <img
+              src="images/warehouse.png"
+              class="absolute inset-0 w-full h-full object-cover z-0"
+              alt="Industrial"
+            />
+            <div class="absolute inset-0 bg-black/10 z-10"></div>
             <span
-              class="font-mono text-xs tracking-wide text-ink-faint text-center"
+              class="relative font-mono text-xs font-bold tracking-wide text-white text-center z-20"
               >Industrial Security</span
             >
           </div>
+
+          <!-- Card 4: Years of Excellence -->
           <div
-            class="rounded-2xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 p-8 flex flex-col items-center justify-center gap-1 h-56"
+            class="relative overflow-hidden rounded-2xl bg-brand-500 text-white shadow-lg shadow-brand-500/30 p-8 flex flex-col items-center justify-center gap-1 h-56"
           >
             <span class="font-head text-5xl font-bold">12+</span>
             <span class="font-mono text-xs tracking-wide text-center"
@@ -334,7 +359,7 @@
           HOW WE WORK
         </div>
         <h2
-          class="font-head font-bold text-[clamp(2rem,4vw,3rem)] leading-tight text-ink "
+          class="font-head font-bold text-[clamp(2rem,4vw,3rem)] leading-tight text-ink"
         >
           A Process Built On <span class="text-brand-600">Trust.</span>
         </h2>
@@ -618,11 +643,11 @@
           class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] tracking-wide text-slate-500"
         >
           <span
-            >© <span id="footerYear">2025</span>  Vision IT Trade. All rights
+            >© <span id="footerYear">2025</span> Vision IT Trade. All rights
             reserved.</span
           >
           <span class="flex gap-4"
-            ><a href="#" class="hover:text-brand-400 transition-colors"
+            ><a href="" class="hover:text-brand-400 transition-colors"
               >Privacy Policy</a
             ><a href="#" class="hover:text-brand-400 transition-colors"
               >Terms of Service</a

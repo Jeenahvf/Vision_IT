@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisionIT Security — Camera Sales & Installation</title>
+    <meta
+      name="description"
+      content="Professional CCTV cameras, IP surveillance systems and expert installation for homes, businesses and industrial facilities."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-body bg-paper text-ink antialiased">
+    <!-- ======================= NAVBAR ======================= -->
+    <nav
+      id="navbar"
+      class="fixed top-0 inset-x-0 z-50 border-b border-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-5 sm:px-8">
+        <div class="flex items-center justify-between h-[72px]">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2.5 group">
+            <span
+              class="grid place-items-center w-24 h-14 rounded-xl shadow-lg transition-transform group-hover:scale-105 overflow-hidden"
+            >
+              <img
+                src="logo.png"
+                alt="Icon Description"
+                class="w-full h-full object-cover"
+              />
+            </span>
+          </a>
+
+          <!-- Desktop links -->
+          <ul
+            class="hidden lg:flex items-center gap-9 font-head text-[0.95rem] font-semibold tracking-wide text-ink-soft"
+          >
+            <li>
+              <a
+                data-nav="index.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="about.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="services.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="gallery.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <!-- <li>
+              <a
+                data-nav="blog.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                data-nav="reviews.html"
+                class="nav-link transition-colors hover:text-ink"
+                href="reviews.html"
+                >Reviews</a
+              >
+            </li> -->
+          </ul>
+
+          <!-- CTA + hamburger -->
+          <div class="flex items-center gap-3">
+            <a
+              href="contact.html"
+              class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-900 text-white font-head font-semibold text-sm tracking-wide shadow-lg shadow-brand-500/25 transition-all hover:bg-brand-400 hover:shadow-brand-500/40 hover:-translate-y-0.5"
+            >
+              Any Queries?
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </a>
+            <button
+              id="hamburger"
+              class="hamburger lg:hidden grid gap-1.5 p-2 -mr-2"
+              aria-label="Toggle menu"
+            >
+              <span class="block w-6 h-0.5 bg-ink rounded-full"></span>
+              <span class="block w-6 h-0.5 bg-ink rounded-full"></span>
+              <span class="block w-6 h-0.5 bg-ink rounded-full"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden bg-white/95 backdrop-blur-md border-t border-slate-200"
+      >
+        <div
+          class="px-5 py-4 flex flex-col font-head font-semibold tracking-wide"
+        >
+          <a
+            href="index.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >About</a
+          >
+          <a
+            href="services.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Services</a
+          >
+          <a
+            href="gallery.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Gallery</a
+          >
+          <a
+            href="blog.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Blog</a
+          >
+          <a
+            href="reviews.html"
+            class="py-3 border-b border-slate-100 text-ink-soft hover:text-brand-600 transition-colors"
+            >Reviews</a
+          >
+          <a
+            href="contact.html"
+            class="mt-3 py-3 text-center rounded-xl bg-brand-500 text-white"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </nav>
+
+
+  <!-- ======================= PAGE BANNER ======================= -->
+  <section class="relative overflow-hidden pt-[72px] border-b border-slate-200 bg-white">
+    <div class="absolute inset-0 grid-bg"></div>
+    <div class="absolute -top-24 right-0 w-96 h-96 bg-brand-100/60 rounded-full blur-3xl"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20">
+      <div class="section-label flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] text-brand-600 mb-3">LEGAL</div>
+      <h1 class="font-head font-bold text-[clamp(2.4rem,5vw,3.6rem)] leading-[1.08] text-ink max-w-3xl">Privacy <span class="text-brand-600">Policy</span></h1>
+      <p class="mt-4 text-lg text-ink-soft max-w-2xl">How we collect, use and protect your personal information, in line with the Individual Privacy Act, 2075 (2018) and other applicable Nepali law.</p>
+      <div class="mt-6 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-paper border border-brand-400 font-mono text-[11px] tracking-widest text-brand-400">
+        LAST UPDATED · 15 MAY 2026
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= LEGAL CONTENT ======================= -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16 md:py-20">
+    <div class="grid lg:grid-cols-[260px_1fr] gap-10 lg:gap-14">
+
+      <!-- Sticky TOC -->
+      <aside class="lg:sticky lg:top-[96px] lg:self-start">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+          <div class="font-mono text-[11px] tracking-widest text-brand-600 mb-3">ON THIS PAGE</div>
+          <ol class="space-y-0.5 list-none">
+            <li><a href="#intro" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">1. Introduction</a></li><li><a href="#scope" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">2. Scope &amp; Legal Basis</a></li><li><a href="#info-collect" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">3. Information We Collect</a></li><li><a href="#how-use" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">4. How We Use Your Information</a></li><li><a href="#consent" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">5. Consent</a></li><li><a href="#sharing" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">6. Sharing &amp; Disclosure</a></li><li><a href="#storage" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">7. Data Storage &amp; Security</a></li><li><a href="#retention" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">8. Retention Period</a></li><li><a href="#rights" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">9. Your Rights</a></li><li><a href="#cookies" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">10. Cookies &amp; Website Analytics</a></li><li><a href="#cctv" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">11. CCTV Footage Captured at Our Premises</a></li><li><a href="#children" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">12. Children's Privacy</a></li><li><a href="#changes" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">13. Changes to This Policy</a></li><li><a href="#contact" class="block py-1.5 text-sm text-ink-soft hover:text-brand-600 transition-colors">14. Contact &amp; Complaints</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <!-- Body -->
+      <div class="min-w-0">
+        
+        <!-- Disclaimer -->
+        <div class="reveal mb-10 rounded-2xl border-l-4 border-brand-500 bg-brand-50/60 p-6">
+          <div class="font-mono text-[11px] tracking-widest text-brand-700 mb-2">PLEASE NOTE</div>
+          <p class="text-sm text-ink-soft leading-relaxed">
+            This document is provided in good faith to explain how VisionGuard Security &amp; Hardware operates under Nepali law. It is not legal advice. If you require legal interpretation, please consult a qualified advocate enrolled with the Nepal Bar Council. The Nepali (Devanagari) version of this document, where it exists, shall prevail in case of any conflict with this English text.
+          </p>
+        </div>
+
+        
+        <section id="intro" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">01</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Introduction</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>VisionGuard Security &amp; Hardware ("we", "us", "our", or "the Store") is a retail and service business based at New Baneshwor, Kathmandu, Nepal. We value the privacy of our customers, visitors and trade partners. This Privacy Policy explains what personal information we collect, how we use it, and the rights you have under Nepali law.</p>
+        <p>By visiting our store, our website, or by purchasing goods and installation services from us, you confirm that you have read and understood this Policy.</p>
+          </div>
+        </section>
+        <section id="scope" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">02</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Scope &amp; Legal Basis</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>This Policy is prepared with reference to the following laws of Nepal, which together form the legal basis for how we handle your personal information:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>The <strong>Constitution of Nepal, 2015</strong>, Article 28 — recognising the right to privacy as a fundamental right.</li>
+          <li>The <strong>Individual Privacy Act, 2075 (2018)</strong> and the <strong>Individual Privacy Regulation, 2077 (2020)</strong> — the primary statutes governing collection and processing of personal information in Nepal.</li>
+          <li>The <strong>Electronic Transactions Act, 2063 (2008)</strong> — governing electronic records, digital communication and cyber offences.</li>
+          <li>The <strong>Consumer Protection Act, 2075 (2018)</strong> — protecting purchasers of goods and services.</li>
+          <li>The <strong>National Penal Code, 2074 (2017)</strong> — including provisions on privacy-related offences.</li>
+        </ul>
+        <p>Nepal does not currently have a single comprehensive data protection statute equivalent to the EU GDPR, and no dedicated Data Protection Authority is presently operational. Complaints under the Individual Privacy Act are heard by the relevant District Court.</p>
+          </div>
+        </section>
+        <section id="info-collect" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">03</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Information We Collect</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We collect only the personal information reasonably required to serve you. Depending on how you interact with us, this may include:</p>
+        <p class="font-head font-semibold text-ink mt-4">a) Contact &amp; identification details</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Full name, telephone or WhatsApp number, email address.</li>
+          <li>Delivery and installation address for the supply or fitting of goods.</li>
+          <li>Citizenship or PAN/VAT details only where required for tax invoicing of trade or bulk orders.</li>
+        </ul>
+        <p class="font-head font-semibold text-ink mt-4">b) Transaction details</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Records of items purchased, dates of purchase, warranty registrations, and after-sales service history.</li>
+          <li>Payment method used (cash, bank transfer, eSewa, Khalti, IME Pay, card, etc.). We do not store full card numbers; payments are processed through licensed payment service providers.</li>
+        </ul>
+        <p class="font-head font-semibold text-ink mt-4">c) Website &amp; communication data</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Messages submitted through our contact form or social media channels.</li>
+          <li>Basic technical information automatically logged by your browser (IP address, device type, pages viewed) — see section 10.</li>
+        </ul>
+        <p>We do <strong>not</strong> intentionally collect sensitive personal information such as caste, ethnicity, religion, political views, health records or biometric data, except where strictly necessary for a specific service you have requested (for example, fingerprint enrolment for a biometric lock you have purchased from us).</p>
+          </div>
+        </section>
+        <section id="how-use" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">04</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">How We Use Your Information</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Information collected from you is used solely for the purposes for which it was provided, including:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Processing your orders, preparing quotations and issuing tax invoices.</li>
+          <li>Arranging delivery, site survey, installation and after-sales servicing.</li>
+          <li>Honouring product warranties and managing repair or replacement requests.</li>
+          <li>Responding to enquiries received via phone, WhatsApp, email, social media or our contact form.</li>
+          <li>Sending occasional information about new stock, offers or service reminders — only where you have agreed to receive such messages.</li>
+          <li>Complying with tax, accounting and other legal obligations under the laws of Nepal.</li>
+        </ul>
+        <p>We will not use your information for any purpose materially different from those listed above without first asking for your consent.</p>
+          </div>
+        </section>
+        <section id="consent" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">05</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Consent</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Under the Individual Privacy Act, 2075, personal information may generally be collected only after informing you of the purpose and obtaining your consent. By providing us with your details — whether at our store counter, by telephone, through our website, or through any electronic channel — you consent to our collecting and using that information for the purposes described in this Policy.</p>
+        <p>You may withdraw your consent at any time by contacting us using the details in section 14. Where consent is withdrawn, we will stop processing your information for the affected purpose, except where we are required to retain it under Nepali law (for example, tax records).</p>
+          </div>
+        </section>
+        <section id="sharing" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">06</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Sharing &amp; Disclosure</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We do not sell, rent or trade your personal information. We share it only in the following limited situations:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li><strong>Service partners</strong> — delivery couriers, installation sub-contractors, manufacturer service centres (for warranty claims) and licensed payment processors. These partners receive only the minimum information needed to perform their function.</li>
+          <li><strong>Accountants &amp; auditors</strong> — for the purpose of bookkeeping, tax filing and statutory audit.</li>
+          <li><strong>Lawful requests</strong> — where we are required to disclose information by a competent authority of Nepal, including a court order, a written request from an investigating authority under the Criminal Procedure Code, 2074 or other prevailing laws.</li>
+          <li><strong>Business protection</strong> — where reasonably necessary to investigate, prevent or take action regarding suspected fraud, theft, threats to physical safety, or violations of our Terms of Service.</li>
+        </ul>
+        <p>We do not transfer your personal information abroad except where required by an overseas manufacturer to honour a warranty claim, or where information is hosted by an international service provider (for example, cloud-based email or analytics). In such cases, we take reasonable steps to ensure your information continues to be protected.</p>
+          </div>
+        </section>
+        <section id="storage" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">07</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Data Storage &amp; Security</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Customer records are stored at our office in Kathmandu in both physical form (printed invoices, registers) and electronic form (computer records and accounting software). Electronic records are protected with access controls, password protection and regular backups.</p>
+        <p>We make reasonable arrangements, as required by Section 27 of the Individual Privacy Act, 2075, to protect personal information against unauthorised access, alteration, disclosure or destruction. However, no method of transmission over the internet and no method of electronic storage is fully secure. We cannot guarantee absolute security, but we will act promptly to investigate and address any incident that may affect your information.</p>
+          </div>
+        </section>
+        <section id="retention" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">08</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Retention Period</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We retain your personal information only for as long as is necessary for the purpose for which it was collected, or for as long as we are required to retain it under Nepali law. As a general practice:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Invoicing and tax records are retained for a minimum of five (5) years as required under the Income Tax Act, 2058 and applicable VAT rules.</li>
+          <li>Warranty and installation records are retained for the duration of the warranty period plus a reasonable additional period for service follow-up.</li>
+          <li>Marketing contact details are retained only while you remain subscribed.</li>
+        </ul>
+        <p>After the relevant period, records are securely deleted, destroyed or anonymised.</p>
+          </div>
+        </section>
+        <section id="rights" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">09</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Your Rights</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Subject to the limits of Nepali law, you have the right to:</p>
+        <ul class="list-disc pl-6 space-y-1.5">
+          <li>Be informed about what personal information of yours we hold and the purpose for which it is held.</li>
+          <li>Request access to your personal information and request correction of any inaccuracies.</li>
+          <li>Withdraw your consent to further processing, except where we have a legal obligation to continue holding the information.</li>
+          <li>Request deletion of your personal information, subject to the retention obligations described in section 8.</li>
+          <li>Object to receiving promotional messages from us at any time.</li>
+          <li>File a complaint with the appropriate District Court in the event of a serious privacy violation, as provided under the Individual Privacy Act, 2075.</li>
+        </ul>
+        <p>Requests of this kind can be made using the contact details in section 14. We will respond within a reasonable period, ordinarily not exceeding fifteen (15) working days.</p>
+          </div>
+        </section>
+        <section id="cookies" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">10</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Cookies &amp; Website Analytics</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Our website may use cookies and similar technologies to remember your preferences, count page visits and improve site performance. Cookies are small text files placed on your device by your browser. Most browsers allow you to refuse cookies or to delete them at any time through your browser settings.</p>
+        <p>Where cookies or analytics tools collect information that could identify you personally, the consent requirements of the Individual Privacy Act, 2075 apply, and you may withdraw consent by disabling cookies in your browser. Refusing cookies will not prevent you from browsing our site, although some features may not work as intended.</p>
+          </div>
+        </section>
+        <section id="cctv" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">11</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">CCTV Footage Captured at Our Premises</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>For the safety of customers, staff and stock, CCTV cameras are operated at our store and warehouse. Notices are displayed at the entrances to inform you that filming is taking place. Footage is stored on a secure recorder, accessed only by authorised staff, and ordinarily over-written within thirty (30) days unless retained for a specific incident or as required by the Nepal Police or a competent authority.</p>
+          </div>
+        </section>
+        <section id="children" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">12</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Children's Privacy</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Our products and services are directed at adults. We do not knowingly collect personal information from any person below the age of eighteen (18) without the consent of a parent or legal guardian. If you believe a minor has provided us with information without such consent, please contact us and we will delete it.</p>
+          </div>
+        </section>
+        <section id="changes" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">13</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Changes to This Policy</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>We may update this Policy from time to time to reflect changes in our practices or in the law (for example, the proposed Information Technology and Cyber Security Bill currently before the House of Representatives). The latest version will always be posted on this page, with the "Last Updated" date shown at the top.</p>
+          </div>
+        </section>
+        <section id="contact" class="reveal scroll-mt-28 mb-10">
+          <div class="flex items-baseline gap-3">
+            <span class="font-mono text-sm text-brand-600">14</span>
+            <h2 class="font-head text-2xl sm:text-[1.7rem] font-bold text-ink leading-tight">Contact &amp; Complaints</h2>
+          </div>
+          <div class="mt-4 space-y-4 text-ink-soft leading-relaxed text-[0.97rem]">
+            
+        <p>Questions, requests or complaints about this Policy or about your personal information can be sent to us at the address shown in the box below. If your concern is not resolved to your satisfaction, you have the right to seek remedy through the relevant District Court under the Individual Privacy Act, 2075.</p>
+          </div>
+        </section>
+
+        <!-- Contact block -->
+        <div class="mt-12 rounded-2xl border border-slate-200 bg-white p-7 shadow-sm">
+          <h3 class="font-head text-xl font-bold text-ink">Questions About This Document?</h3>
+          <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+            If anything here is unclear, or you'd like to exercise a right described above, contact us:
+          </p>
+          <ul class="mt-4 space-y-1.5 text-sm text-ink-soft">
+            <li><strong class="text-ink">VisionGuard Security &amp; Hardware</strong></li>
+            <li>New Baneshwor, Kathmandu 44600, Bagmati Province, Nepal</li>
+            <li>Phone / WhatsApp: +977 98XXXXXXXX</li>
+            <li>Email: <a href="mailto:info@visionguard.com.np" class="text-brand-600 hover:underline">info@visionguard.com.np</a></li>
+          </ul>
+          <a href="contact.html" class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-head font-semibold text-sm transition-all hover:bg-brand-600">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="bg-ink text-slate-300">
+      <div
+        class="max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-10 grid gap-12 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="lg:col-span-1">
+          <a href="index.html" class="flex items-center gap-2.5 ">
+            <span
+              class="grid place-items-center w-20 h-14 rounded-xl bg-white text-white shadow-lg shadow-brand-500/30 transition-transform group-hover:scale-105 overflow-hidden "
+            >
+              <img
+                src="logo.png"
+                alt="Icon Description"
+                class="w-full h-full object-cover"
+              />
+            </span>
+    
+          </a>
+          <p class="mt-4 text-sm text-slate-400 leading-relaxed max-w-xs">
+            Protecting what matters most. Professional CCTV sales and
+            installation since 2012.
+          </p>
+          <div class="mt-6 flex gap-3">
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M18.9 1.2h3.7l-8 9.1L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.5-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9Zm-1.3 19.4h2L6.5 3.3H4.4L17.6 20.6Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.25.07 1.65.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.25.06-1.65.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.21 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.4 2.21 8.8 2.2 12 2.2Zm0 1.8c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.17C2.41 10.1 2.4 10.45 2.4 12s.01 1.9.07 3.16c.05 1.14.24 1.76.4 2.17.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.26.07-1.61.07-3.16s-.01-1.9-.07-3.16c-.05-1.14-.24-1.76-.4-2.17a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.17-.4C15.5 4.01 15.15 4 12 4Zm0 3.06A4.94 4.94 0 1 1 12 16.94 4.94 4.94 0 0 1 12 7.06Zm0 8.14A3.2 3.2 0 1 0 12 8.8a3.2 3.2 0 0 0 0 6.4Zm6.3-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="grid place-items-center w-10 h-10 rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-brand-500 hover:text-white hover:border-brand-500 transition-all"
+            >
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4
+            class="font-head text-sm font-bold tracking-widest text-white uppercase mb-5"
+          >
+            Quick Links
+          </h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a
+                href="index.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="font-head text-sm font-bold tracking-widest text-white uppercase mb-5"
+          >
+            Services
+          </h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >CCTV Camera Sales</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Professional Installation</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >IP Surveillance</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Access Control</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >Cloud Monitoring</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-slate-400 hover:text-brand-400 transition-colors"
+                >AMC Plans</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="font-head text-sm font-bold tracking-widest text-white uppercase mb-5"
+          >
+            Get In Touch
+          </h4>
+          <ul class="space-y-3 text-sm text-slate-400">
+            <li class="flex gap-2.5">
+              <span class="text-brand-400 mt-0.5">📍</span> New Baneshwor,
+              Kathmandu 44600, Nepal
+            </li>
+            <li class="flex gap-2.5">
+              <span class="text-brand-400 mt-0.5">📞</span> +977 98XXXXXXXX
+            </li>
+            <li class="flex gap-2.5">
+              <span class="text-brand-400 mt-0.5">✉️</span>
+              info@visionit.com.np
+            </li>
+          </ul>
+          <a
+            href="contact.html"
+            class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white font-head font-semibold text-sm transition-all hover:bg-brand-600"
+          >
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10">
+        <div
+          class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] tracking-wide text-slate-500"
+        >
+          <span
+            >© <span id="footerYear">2025</span> Vision IT Trade. All rights
+            reserved.</span
+          >
+          <span class="flex gap-4"
+            ><a href="privacy.html" class="hover:text-brand-400 transition-colors"
+              >Privacy Policy</a
+            ><a href="terms.html" class="hover:text-brand-400 transition-colors"
+              >Terms of Service</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
